@@ -1,0 +1,13 @@
+1. Item name:Headphones, Price:900 Rs
+2. Item name:Smartphone, Price:2500 Rs
+3. Item name:Laptop, Price:40000 Rs
+4. Item name:Tablet, Price:10000 Rs
+5. Item name:Smartwatch, Price:5000 Rs
+6. Item name:Apples, Price:200Rs
+7. Item name:Milk , Price:250 Rs
+8. Item name:Eggs , Price:40 Rs
+9. Item name:Bread, Price:100 Rs
+10. Item name:Chicken, Price:700 Rs
+11. Item name:Potatoes , Price:50 Rs
+12. Item name:Spinach, Price:50 Rs
+13. Item name:Rice, Price:300 Rs
