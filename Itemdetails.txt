@@ -11,3 +11,4 @@
 11. Item name:Potatoes , Price:50 Rs
 12. Item name:Spinach, Price:50 Rs
 13. Item name:Rice, Price:300 Rs
+14. Item name:ipodes, Price:3000

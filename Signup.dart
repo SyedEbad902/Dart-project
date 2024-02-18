@@ -9,7 +9,8 @@ void signUpDetails() {
   print('Enter Password:');
   String password = stdin.readLineSync()!;
   addCredentialsToFile(email, password);
-  print('Credentials added successfully.');
+  print("Sucessfully Register");
+  loginCheck();
 }
 
 
