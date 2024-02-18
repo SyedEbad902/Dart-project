@@ -27,7 +27,8 @@ void loginCheck() {
   String passwordToCheck = stdin.readLineSync()!;
   if (doCredentialsExist(emailToCheck, passwordToCheck)) {
     print('Welcome $emailToCheck to Ecommerce Store ');
-    Dashboard();
+    Dashboard d1 = Dashboard();
+    d1.dashboard();
   } else {
     print('Credentials do not exist in the file.');
   }
