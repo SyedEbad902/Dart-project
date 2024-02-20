@@ -7,7 +7,7 @@ void addCredentialsToFile(String email, String password) {
   file.writeAsStringSync('$email,$password\n', mode: FileMode.append);
 }
 
-bool doCredentialsExist(String email, String password) {
+bool emailExist(String email, String password) {
   final file = File('credentials.txt');
   if (!file.existsSync()) {
     return false;
@@ -19,20 +19,47 @@ bool doCredentialsExist(String email, String password) {
   });
 }
 
+
 void loginCheck() {
-  print("Enter your Login Details");
-  print('Enter Username:');
-  String emailToCheck = stdin.readLineSync()!;
-  print('Enter password:');
-  String passwordToCheck = stdin.readLineSync()!;
-  if (doCredentialsExist(emailToCheck, passwordToCheck)) {
-    print('Welcome $emailToCheck to Ecommerce Store ');
-    Dashboard d1 = Dashboard();
-    d1.dashboard();
-  } else {
-    print('Credentials do not exist in the file.');
+    print("Enter your Login Details");
+    print('Enter Username:');
+    String emailToCheck = stdin.readLineSync()!;
+    print('Enter password:');
+    String passwordToCheck = stdin.readLineSync()!;
+  bool userExists = true;
+
+  while (userExists) {
+   
+    if (emailExist(emailToCheck, passwordToCheck)) {
+      print('Welcome $emailToCheck to Ecommerce Store ');
+      Dashboard d1 = Dashboard();
+      d1.dashboard();
+      userExists = false;
+    } else {
+      print('User not Found.');
+      print('Please Enter Correct Username or Password');
+      print('Enter your Username');
+      emailToCheck = stdin.readLineSync()!;
+      print('Enter password:');
+      passwordToCheck = stdin.readLineSync()!;
+    }
   }
 }
+
+
+//   print("Enter your Login Details");
+//   print('Enter Username:');
+//   String emailToCheck = stdin.readLineSync()!;
+//   print('Enter password:');
+//   String passwordToCheck = stdin.readLineSync()!;
+//   if (doCredentialsExist(emailToCheck, passwordToCheck)) {
+//     print('Welcome $emailToCheck to Ecommerce Store ');
+//     Dashboard d1 = Dashboard();
+//     d1.dashboard();
+//   } else {
+//     print('Credentials do not exist in the file.');
+//   }
+// }
 
 
 

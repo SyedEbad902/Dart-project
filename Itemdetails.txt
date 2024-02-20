@@ -12,3 +12,5 @@
 12. Item name:Spinach, Price:50 Rs
 13. Item name:Rice, Price:300 Rs
 14. Item name:ipodes, Price:3000
+15. Item name:Android LED, Price:50000
+16. Item name:computer, Price:1000
