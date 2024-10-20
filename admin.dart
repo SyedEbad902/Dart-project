@@ -27,7 +27,7 @@ admin() {
 mainMenu() {
   print("1. Show Items");
   print("2. Show users");
-  print("3. Show add items");
+  print("3. Add items");
   print("Enter Number you Want to See");
   var adminChoice = stdin.readLineSync();
   if (adminChoice == '1') {
