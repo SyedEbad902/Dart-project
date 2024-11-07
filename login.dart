@@ -22,9 +22,9 @@ bool emailExist(String email, String password) {
 
 void loginCheck() {
     print("Enter your Login Details");
-    print('Enter Username:');
+    print('Enter Your Username:');
     String emailToCheck = stdin.readLineSync()!;
-    print('Enter password:');
+    print('Enter Your password:');
     String passwordToCheck = stdin.readLineSync()!;
   bool userExists = true;
 
